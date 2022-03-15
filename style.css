@@ -1,0 +1,260 @@
+body{
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	background-color: rgb(170, 170, 170);
+}
+header{
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: bottom center;
+	color: white;
+	display: flex;
+	text-align: justify;
+	padding: 0 20px;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+#anime-header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("images/yourname.png");
+}
+#mc-header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://wallpaperaccess.com/full/1394370.jpg");
+}
+#bestgirl-header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("images/jibril.jpg");
+}
+#openings-header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://wallpaperaccess.com/full/176050.jpg");
+}
+iframe{
+	width: 45vw;
+	height: 25.3125vw;
+	margin-left: 20px;
+}
+.op-source{
+	font-weight: bold;
+	text-indent: 0;
+	font-size: 2vw;
+}
+@media only screen and (max-width:700px){
+	#mc-header{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/564x/38/b6/b3/38b6b358e3d2e260f24fcfb29072f429.jpg");
+	}
+	#bestgirl-header{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://s1.zerochan.net/Jibril.%28No.Game.No.Life%29.600.2939423.jpg");
+		background-attachment: fixed;
+	}
+	iframe{
+		display: block;
+		height: 53.4375vw;
+		width: 95vw;
+		margin: auto;
+	}
+	.op-source{
+		font-size: 18px;
+		text-align: center;
+	}
+}
+header h1{
+	margin-top: 5px;
+	text-align: center;
+	font-size: 3em;
+}
+header p{
+	line-height: 1.5em;
+}
+section{
+	overflow: auto;
+	margin: 4vh 0;
+}
+section div{
+	display: flex;
+}
+.rank{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 13vw;
+	height: 13vw;
+	max-width: 80px;
+	max-height: 80px;
+	background-color: black;
+	color: white;
+	border-radius: 3px;
+	margin: 10px 8px 5px 10px;
+}
+.rank div{
+	font-size: 8vw;	
+}
+section div h2{
+	font-size: 8vw;
+	padding: 4px 0;
+	margin-top: 12px;
+}
+section img{
+	display: block;
+	width: 95%;
+	margin: auto;
+}
+section p{
+	padding: 0 3%;
+	text-align: justify;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+@media only screen and (min-width:700px){
+	header div{
+		width: 70%;
+		font-size: 1.2em;
+	}
+	section div h2{
+		font-size: 50px;
+		padding: 4px 0;
+	}
+	section img{
+		float: left;
+		width: 40%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	section p{
+		font-size: 1.2em;
+		margin-top: 0;
+		padding: 0 20px;
+		text-indent: 5vw;
+	}
+	.rank div{
+		font-size: 5vw;
+	}
+}
+
+nav{
+	display: flex;
+	overflow: hidden;
+	background-color: black;
+	font-weight: bold;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+}
+nav div{
+	display: flex;
+	padding: 0;
+	text-align: center;
+}
+nav div a{
+	font-size: 26px;
+	padding: 18px 25px 0 25px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 3px solid black;
+	transition: 0.8s;
+}
+nav a:hover{
+	border-bottom: 3px solid rgb(15, 192, 15);
+	background-color: rgb(48, 48, 48);
+}
+nav h1{
+	color: rgb(15, 192, 15);
+	margin: 15px 10px;
+	font-size: 30px;
+	padding: 0;
+}
+#menu-icon{
+	display: none;
+}
+#exit-icon{
+	display: none;
+}
+#mobile-bar{
+	display: none;
+}
+#mobile-menu{
+	display: none;
+}
+@media only screen and (max-width:700px){
+	#mobile-bar{
+		display: block;
+		position: sticky;
+		top: 0;
+		width: 100%;
+		background-color: black;
+		color: rgb(15, 192, 15);
+		text-align: center;
+	}
+	#menu-icon{
+		display: block;
+		position: absolute;
+		left: 5vw;
+		top: 50%;
+		transform: translate(0,-50%);
+		font-size: 9vw;
+		color: white;
+		z-index: 0;
+	}
+	#mobile-bar h1{
+		margin: 0;
+		font-size: 16vw;
+	}
+	#mobile-menu{
+		display: block;
+		margin-bottom: 10px;
+		text-decoration: underline;
+		font-size: 9vw;
+		text-align: right;
+		padding-right: 3vw;
+		box-sizing: border-box;
+		color: white;
+	}
+	#exit-icon{
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 30px;
+		color: white;
+	}
+	nav{
+		box-sizing: border-box;
+		padding-top: 40px;
+		position: fixed;
+		width: 35vw;
+		left: -35vw;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		background-color: black;
+		z-index: 1;
+		transition: 0.5s;
+	}
+	nav div{
+		flex-direction: column;
+		height: 45vh;
+		justify-content: space-between;
+		text-align: right;
+		margin: 0;
+		width: 100%;
+	}
+	nav div a{
+		font-size: 5.5vw;
+		padding: 0 3vw 0 0;
+		margin: 0;
+	}
+	nav h1{
+		font-size: 8vw;
+		width: 100%;
+		margin: 10px 0;
+		text-align: right;
+		padding-right: 3vw;
+		box-sizing: border-box;
+	}
+	header h1{
+		font-size: 2em;
+	}
+}
